@@ -11,6 +11,33 @@ poetry run freebox-tools vm list-vms
 
 Authenticate to your freebox when asked.
 
+## Usage
+
+```sh
+❯ poetry run freebox-tools --help
+                                                                                                                                     
+ Usage: freebox-tools [OPTIONS] COMMAND [ARGS]...                                                                                    
+                                                                                                                                     
+╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ *  --token-file                TEXT  The token file to use [env var: FREEBOX_TOKEN] [default: None] [required]                    │
+│    --api-version               TEXT  The API version [env var: FREEBOX_API] [default: v8]                                         │
+│    --freebox-host              TEXT  The Freebox host [env var: FREEBOX_HOST] [default: mafreebox.freebox.fr]                     │
+│    --freebox-port              TEXT  The Feeebox port [env var: FREEBOX_PORT] [default: 443]                                      │
+│    --install-completion              Install completion for the current shell.                                                    │
+│    --show-completion                 Show completion for the current shell, to copy it or customize the installation.             │
+│    --help                            Show this message and exit.                                                                  │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ contact   Manage Contacts                                                                                                         │
+│ dhcp      Manage DHCP                                                                                                             │
+│ fw        Manage ports forwarding                                                                                                 │
+│ profile   Manage Profiles                                                                                                         │
+│ storage   Manage Storage                                                                                                          │
+│ vm        Manage VMs                                                                                                              │
+│ vpn       Manage VPNs                                                                                                             │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
 ## VMs
 
 ```sh
