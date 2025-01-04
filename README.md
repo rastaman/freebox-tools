@@ -1,6 +1,10 @@
 # Freebox tools
 
-This is a **work in progress** python client tool for the Freebox API. Tests are done on a Freebox Delta. It rely on a PR sent from my fork of `freebox-api`, which extends another older fork that i don't recall yet.
+This is a **work in progress** python client tool for the Freebox API. Tests are done on a Freebox Delta. It rely on a PR sent from my fork of `freebox-api`, which extends another older fork that i don't recall yet, this means that at this time the project file reference the following dependency:
+
+```txt
+freebox-api = { git = "ssh://git@github.com/rastaman/freebox-api.git", branch = "Add_back_VMs_and_other_modules" }
+```
 
 ## Setup
 
