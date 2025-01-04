@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "freebox_tools"
+version = "0.1.0"
+description = ""
+authors = ["Ludovic Maitre <ludovic.maitre@effervens.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+#freebox-api = {path = "../rastaman/freebox-api", develop = true}
+freebox-api = { git = "ssh://git@github.com/rastaman/freebox-api.git", branch = "Add_back_VMs_and_other_modules" }
+typer = "^0.12.5"
+pyyaml = "^6.0.2"
+websockets = "^14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+freebox-tools = "freebox_tools.client:app"
